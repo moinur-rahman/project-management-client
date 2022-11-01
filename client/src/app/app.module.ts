@@ -9,9 +9,10 @@ import { ProjectManagerPageComponent } from './project-manager-page/project-mana
 import { DeveloperPageComponent } from './developer-page/developer-page.component';
 import { ProjectListComponent } from './developer-page/project-list/project-list.component';
 import { DeveloperPageHeaderComponent } from './developer-page/developer-page-header/developer-page-header.component';
+import { TopRightComponent } from './developer-page/top-right/top-right.component';
 
 @NgModule({
-  declarations: [AppComponent, ProjectManagerPageComponent, DeveloperPageComponent, DeveloperPageComponent, ProjectListComponent, DeveloperPageHeaderComponent],
+  declarations: [AppComponent, ProjectManagerPageComponent, DeveloperPageComponent, DeveloperPageComponent, ProjectListComponent, DeveloperPageHeaderComponent, TopRightComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

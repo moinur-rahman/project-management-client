@@ -1,0 +1,134 @@
+/*bibhas */
+.fcontainer {
+  display: flex;
+  background-color: #f5f5f7;
+  border-radius: 14px;
+  display: flex;
+  margin: 20px;
+  width: 740px;
+  height: 160px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 180px;
+}
+
+img {
+  width: 180px;
+  height: 200px;
+  display: flex;
+  margin-left: 80px;
+  margin-top: -40px;
+}
+/* .item1{
+      order: 3;
+      /* flex-grow: 3; */
+/* flex-shrink: 2; */
+/* align-self: center;
+  } */
+.devName {
+  font-family: cursive;
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+}
+.devBio {
+  font-family: cursive;
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+/* sadia */
+.container {
+  width: 800px;
+  background-color: white;
+  display: flex;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 600px;
+  background-color: #f5f5f7;
+  margin: 12px;
+  border-radius: 5px;
+}
+.container2 {
+  display: flex;
+  margin: 12px;
+}
+.projectIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 5px;
+}
+.projectNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+  margin: 12px;
+}
+.percentage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: gainsboro; */
+  width: 70px;
+  height: 70px;
+  margin: 12px;
+}
+.button {
+  width: 90px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+
+  /* padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+  margin: 12px;
+}
+.icon2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+  margin: 12px;
+}

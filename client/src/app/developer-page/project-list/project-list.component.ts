@@ -7,6 +7,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectListComponent implements OnInit {
 
+  list = [
+    {
+      'id': 1,
+      'img': "bf",
+      'projectName': 'Learn Figma',
+      'projectGiver': 'Christopher Morgan',
+    },
+
+    {
+      'id': 2,
+      'img': "af",
+      'projectName': 'Learn',
+      'projectGiver': 'Christopher',
+    },
+    {
+      'id': 2,
+      'img': "af",
+      'projectName': 'Learn',
+      'projectGiver': 'Christopher',
+    },
+    {
+      'id': 2,
+      'img': "af",
+      'projectName': 'Learn',
+      'projectGiver': 'Christopher',
+    },
+    {
+      'id': 2,
+      'img': "af",
+      'projectName': 'Learn',
+      'projectGiver': 'Christopher',
+    },
+    {
+      'id': 2,
+      'img': "af",
+      'projectName': 'Learn',
+      'projectGiver': 'Christopher',
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

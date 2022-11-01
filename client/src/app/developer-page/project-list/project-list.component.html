@@ -1,1 +1,65 @@
-<p>project-list works!</p>
+<div >
+    <span  class="Allprojects">All Projects</span>
+</div>
+<div class="NewTopProject">
+  <span class="Projects">Projects</span>
+  <span class="Newest">The Newest</span
+  ><span class="TopPriority">Top Priority</span>
+  
+</div>
+
+<div class="bodyproject" *ngFor="let item of list">
+  <div class="card1">
+    <div class="cardbg"></div>
+    <div class="Projectimage"></div>
+    <span class="Projectname">{{ item.projectName }}</span>
+    <span class="Projectgiver">{{ item.projectGiver }}</span>
+    <span
+      type="button"
+      class="Timeestimation d-flex align-items-center"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      <i class="fa-solid fa-circle-plus me-1"></i> Add Time Estimation
+    </span>
+
+    <span class="viewproject"><button>View Project</button></span>
+
+    <div class="v1_257"></div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Estimated Days</h5>
+        <button
+          type="button"
+          class="btn-close me-3"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+          <div class="input-box">
+            <input type="" placeholder="No. of days required" required />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="button button-div">
+          <button class="cancel" type="submit">Cancel</button>
+          <button class="submit" type="submit" value="Submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
