@@ -1,0 +1,14 @@
+<div class="container-fluid project-manager-page">
+  <app-sidebar></app-sidebar>
+  <div class="view-gantt-chart">
+    <ejs-gantt
+      height="100%"
+      width="1100px"
+      [dataSource]="data"
+      [taskFields]="taskSettings"
+      [timelineSettings]="timelineView"
+      [columns]="columnSettings"
+    >
+    </ejs-gantt>
+  </div>
+</div>

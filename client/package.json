@@ -22,6 +22,8 @@
     "@fortawesome/angular-fontawesome": "^0.11.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@syncfusion/ej2-angular-gantt": "^20.3.52",
+    "@syncfusion/ej2-material-theme": "~20.3.52",
     "bootstrap": "^5.2.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
