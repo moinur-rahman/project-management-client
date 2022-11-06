@@ -1,3 +1,5 @@
+import { DeveloperAllProjectsComponent } from './developer-page/developer-all-projects/developer-all-projects.component';
+import { ProjectListComponent } from './developer-page/project-list/project-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DeveloperPageComponent } from './developer-page/developer-page.component';
@@ -34,7 +36,15 @@ const routes: Routes = [
     component: ViewGanttChartComponent,
   },
   {
-    path: 'developer',
+    path: 'developer/dashboard',
+    component: DeveloperPageComponent,
+  },
+  {
+    path: 'developer/all-projects',
+    component: DeveloperAllProjectsComponent,
+  },
+  {
+    path: 'developer/dashboard',
     component: DeveloperPageComponent,
   },
 ];

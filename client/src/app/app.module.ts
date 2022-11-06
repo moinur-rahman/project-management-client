@@ -17,7 +17,13 @@ import { ViewAssignProjectComponent } from './project-manager-page/view-assign-p
 import { ViewGanttChartComponent } from './project-manager-page/view-gantt-chart/view-gantt-chart.component';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';import { DeveloperSidenavBarComponent } from './developer-page/developer-sidenav-bar/developer-sidenav-bar.component';
+import { DeveloperAllProjectsComponent } from './developer-page/developer-all-projects/developer-all-projects.component';
+import { AllProjectsListComponent } from './developer-page/developer-all-projects/all-projects-list/all-projects-list.component';
+import { DeveloperWelcomeComponent } from './developer-page/developer-page-header/developer-welcome/developer-welcome.component';
+import { DeveloperSingleProjectComponent } from './developer-page/developer-page-header/developer-single-project/developer-single-project.component';
+import { DeveloperTopBarComponent } from './developer-page/developer-top-bar/developer-top-bar.component';
+
 import { ViewEditRatioComponent } from './project-manager-page/view-edit-ratio/view-edit-ratio.component';
 // @NgModule({
 //   declarations: [AppComponent, ProjectManagerPageComponent, DeveloperPageComponent, DeveloperPageComponent, ProjectListComponent, DeveloperPageHeaderComponent, TopRightComponent],
@@ -35,6 +41,12 @@ import { ViewEditRatioComponent } from './project-manager-page/view-edit-ratio/v
     ViewAssignProjectComponent,
     ViewGanttChartComponent,
     TopRightComponent,
+    DeveloperSidenavBarComponent,
+    DeveloperAllProjectsComponent,
+    AllProjectsListComponent,
+    DeveloperWelcomeComponent,
+    DeveloperSingleProjectComponent,
+    DeveloperTopBarComponent,
     ViewEditRatioComponent,
   ],
   imports: [

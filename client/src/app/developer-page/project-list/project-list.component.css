@@ -4,7 +4,11 @@
 body {
   font-size: 14px;
 }
-
+.dashboard-projects{
+  margin-left: -180px;
+  position: relative;
+  left: 0px;
+}
 .Allprojects{
   width: 620px;
 }
@@ -13,7 +17,7 @@ body {
   min-height: 50px;
 }
 .bodyproject {
-  width: 620px;
+  width: 90%;
   height: 100px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -25,7 +29,7 @@ body {
   overflow: hidden;
 }
 .card1 {
-  width: 620px;
+  width: 90%;
   height: 80px;
   
   background-repeat: no-repeat;
@@ -248,12 +252,12 @@ form .input-box {
   width: 465px;
   /*width: calc(100% / 2 - 20px);*/
 }
-form .input-box span.details {
+form .input-box {
   display: block;
   font-weight: 500;
   margin-bottom: 0px;
 }
-.input-box input {
+.input-box{
   height: 45px;
   width: 100%;
   outline: none;

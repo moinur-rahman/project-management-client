@@ -1,10 +1,27 @@
 <div class="row">
-  <div class="col-8">
-    <app-developer-page-header></app-developer-page-header>
+  <div class="col-3">
+    <app-developer-sidenav-bar></app-developer-sidenav-bar>
   </div>
-  <div class="col-4"><app-top-right></app-top-right></div>
-</div>
+  <div class="col-9">
+    <div class="row">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6"><app-developer-top-bar></app-developer-top-bar></div>
+      </div>
+      <div class="col-7 mt-3">
+        <app-developer-page-header></app-developer-page-header>
+      </div>
+      <div class="col-5 mt-3"><app-top-right></app-top-right></div>
+    </div>
 
-<div class="row">
-  <div class="col-8 projectList"><app-project-list></app-project-list></div>
+    <div class="row">
+      <div class="col-9">
+        <app-developer-single-project></app-developer-single-project>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 projectList"><app-project-list></app-project-list></div>
+    </div>
+  </div>
 </div>

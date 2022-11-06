@@ -1,0 +1,14 @@
+.searchIcon{
+    margin-left: 120px;
+    margin-top: 8px;
+    
+}
+
+.searchBar{
+    border: 2px solid white;
+    background-color: #F5F5F7;
+    position: absolute;
+    height: 40px;
+    width: 300px;
+    border-radius: 25px;
+}
