@@ -19,7 +19,18 @@
     >
       <fa-icon [icon]="faPlus"></fa-icon>
       <p>Assign Project</p></a
-    ><a href="/project-manager/gantt-chart" class="list-group-item list-group-item-action">
+    >
+    <a
+      routerLink="/project-manager/edit-ratio"
+      class="list-group-item list-group-item-action"
+    >
+      <fa-icon [icon]="faPenToSquare"></fa-icon>
+      <p>Edit Ratio</p>
+    </a>
+    <a
+      routerLink="/project-manager/gantt-chart"
+      class="list-group-item list-group-item-action"
+    >
       <fa-icon [icon]="faChartSimple"></fa-icon>
       <p>Gannt Chart</p>
     </a>

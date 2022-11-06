@@ -1,7 +1,75 @@
 <div class="container-fluid project-manager-page">
   <app-sidebar></app-sidebar>
   <div class="view-create-project">
-    <app-form></app-form>
-    <app-create-project-list></app-create-project-list>
+    <div class="form-container">
+      <form
+        (ngSubmit)="onSubmit(createProject)"
+        #createProject="ngForm"
+        class="create-project-form"
+        action="/new-project"
+      >
+        <div class="create-project-form-row">
+          <label>Project Name</label>
+          <input
+            name="projectName"
+            placeholder="Input the project name"
+            class="form-control"
+            type="text"
+            ngModel
+          />
+        </div>
+        <div class="create-project-form-row">
+          <label>Priority</label>
+          <input
+            name="projectPriority"
+            placeholder="Project priority"
+            class="form-control"
+            type="text"
+            ngModel
+          />
+        </div>
+
+        <div class="create-project-form-row">
+          <label>Project Description</label>
+          <textarea
+            name="projectDescription"
+            placeholder="Write something.."
+            class="form-control"
+            type="text"
+            ngModel
+          ></textarea>
+        </div>
+        <div class="create-project-form-row">
+          <label>Starting date</label>
+
+          <input name="endingDate" type="date" class="form-control" ngModel />
+        </div>
+        <div class="create-project-form-row">
+          <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="create-project-table-container">
+      <h1>Project list</h1>
+      <table class="table table-bordered table-striped border-dark">
+        <thead>
+          <tr>
+            <th>Project name</th>
+            <th>Description</th>
+            <th>Priority</th>
+            <th>Starting Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let project of projectList">
+            <td>{{ project.projectName }}</td>
+            <td>{{ project.projectDescription }}</td>
+            <td>{{ project.projectPriority }}</td>
+            <td>{{ project.startingDate }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

@@ -4,6 +4,7 @@ import {
   faPlus,
   faProjectDiagram,
   faChartSimple,
+  faPenToSquare
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -16,6 +17,7 @@ export class SidebarComponent implements OnInit {
   faProjectDiagram = faProjectDiagram;
   faPlus = faPlus;
   faChartSimple = faChartSimple;
+  faPenToSquare = faPenToSquare
   constructor() {}
 
   ngOnInit(): void {}

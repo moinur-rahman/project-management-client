@@ -7,7 +7,7 @@
     justify-content: space-evenly;
 }
 
-.view-assign-project{       
+.view-edit-ratio{
     height: 95vh;
     width: 1100px;
     display: flex;
@@ -17,7 +17,7 @@
     background-color: #fff;
     border-radius: 20px;
 }
-.assign-project-form-div{
+.edit-ratio-form-div{
     width: 100%;
   
     display: flex;
@@ -25,18 +25,18 @@
     justify-content: center;
     align-items: center;
 }
-.assign-project-form-div:first-child{
+.edit-ratio-form-div:first-child{
     height: 40%;
 
-}.assign-project-form-div:last-child{
+}.edit-ratio-form-div:last-child{
     height: 60%;
-    width: 1000px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.assign-project-form{
+.edit-ratio-form{
     width: 1000px;
     height: 200px;
     display: flex;
@@ -44,7 +44,8 @@
     justify-content: space-around;
     align-items: center;    
 }
-.assign-project-form-row{
+
+.edit-ratio-form-row{
     width: 70%;
     height: 30px;
     display: flex;
@@ -52,13 +53,13 @@
     align-items: center;
 }
 
-.assign-project-form-row label{
+.edit-ratio-form-row label{
     width: 32%;
     font-size: 18px;
     font-weight: bold;  
 }
 
-.assign-project-form-row select,input{
+.edit-ratio-form-row select,input{
  width: 38%;
 
  border-radius: 10px;

@@ -12,16 +12,13 @@ import { TopRightComponent } from './developer-page/top-right/top-right.componen
 
 import { SidebarComponent } from './project-manager-page/sidebar/sidebar.component';
 import { ViewDashBoardComponent } from './project-manager-page/view-dash-board/view-dash-board.component';
-import { ProjectStatisticComponent } from './project-manager-page/view-dash-board/project-statistic/project-statistic.component';
-import { ProjectSummaryComponent } from './project-manager-page/view-dash-board/project-summary/project-summary.component';
 import { ViewCreateProjectComponent } from './project-manager-page/view-create-project/view-create-project.component';
-import { FormComponent } from './project-manager-page/view-create-project/form/form.component';
-import { CreateProjectListComponent } from './project-manager-page/view-create-project/create-project-list/create-project-list.component';
 import { ViewAssignProjectComponent } from './project-manager-page/view-assign-project/view-assign-project.component';
 import { ViewGanttChartComponent } from './project-manager-page/view-gantt-chart/view-gantt-chart.component';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewEditRatioComponent } from './project-manager-page/view-edit-ratio/view-edit-ratio.component';
 // @NgModule({
 //   declarations: [AppComponent, ProjectManagerPageComponent, DeveloperPageComponent, DeveloperPageComponent, ProjectListComponent, DeveloperPageHeaderComponent, TopRightComponent],
 
@@ -34,14 +31,11 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt';
     DeveloperPageHeaderComponent,
     SidebarComponent,
     ViewDashBoardComponent,
-    ProjectStatisticComponent,
-    ProjectSummaryComponent,
     ViewCreateProjectComponent,
-    FormComponent,
-    CreateProjectListComponent,
     ViewAssignProjectComponent,
     ViewGanttChartComponent,
-    TopRightComponent
+    TopRightComponent,
+    ViewEditRatioComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +43,9 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt';
     BrowserAnimationsModule,
     FontAwesomeModule,
     GanttModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

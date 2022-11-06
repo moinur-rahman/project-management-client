@@ -5,6 +5,7 @@ import { ViewAssignProjectComponent } from './project-manager-page/view-assign-p
 import { ViewCreateProjectComponent } from './project-manager-page/view-create-project/view-create-project.component';
 import { ViewDashBoardComponent } from './project-manager-page/view-dash-board/view-dash-board.component';
 import { ViewGanttChartComponent } from './project-manager-page/view-gantt-chart/view-gantt-chart.component';
+import { ViewEditRatioComponent } from './project-manager-page/view-edit-ratio/view-edit-ratio.component';
 
 const routes: Routes = [
   {
@@ -25,8 +26,12 @@ const routes: Routes = [
     component: ViewAssignProjectComponent,
   },
   {
+    path: 'project-manager/edit-ratio',
+    component: ViewEditRatioComponent,
+  },
+  {
     path: 'project-manager/gantt-chart',
-    component: ViewGanttChartComponent, 
+    component: ViewGanttChartComponent,
   },
   {
     path: 'developer',

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { DatePicker } from '@syncfusion/ej2-calendars';
 import { projectNewData } from './data';
 @Component({
   selector: 'app-view-gantt-chart',
@@ -6,10 +8,10 @@ import { projectNewData } from './data';
   styleUrls: ['./view-gantt-chart.component.css'],
 })
 export class ViewGanttChartComponent implements OnInit {
-  public data: object[] = projectNewData;
+  public data: any = [];
   public timelineView: object = { timelineViewMode: 'Week' }; //Default one.
   public columnSettings: object[] = [
-    { field: 'TaskID', headerText: 'Task ID' },
+    { field: 'TaskID', headerText: 'Project ID' },
     { field: 'TaskName', headerText: 'Task Name' },
     { field: 'StartDate', headerText: 'StartDate', format: 'dd-MMM-yy' },
     { field: 'Duration', textAlign: 'Right' },
@@ -24,7 +26,11 @@ export class ViewGanttChartComponent implements OnInit {
     child: 'subtasks',
     dependency: 'Predecessor',
   };
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.http.get('http://localhost:5000/get-sorted-list').subscribe((data) => {
+      this.data = data;
+    });
+  }
 }

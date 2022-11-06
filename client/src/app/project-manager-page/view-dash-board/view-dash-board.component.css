@@ -16,3 +16,31 @@
     background-color: #fff;
     border-radius: 20px;
 }
+
+.project-summary{
+    width: 1100px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.project-summary-table{
+    width: 1050px;        
+    border-radius: 30px;
+}   
+.project-statistic{
+    width: 1100px;
+    height: 250px;
+}
+.project-statistic-content{
+    width: 1100px;
+}
+.project-statistic-content-number{
+    font-size: 50px;
+    font-weight: bold;
+}
+.vl {
+    border-left: 6px solid #797474;
+    height: 100px;
+  }

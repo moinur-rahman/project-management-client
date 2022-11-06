@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProjectSummaryComponent } from './project-summary.component';
+import { ViewEditRatioComponent } from './view-edit-ratio.component';
 
-describe('ProjectSummaryComponent', () => {
-  let component: ProjectSummaryComponent;
-  let fixture: ComponentFixture<ProjectSummaryComponent>;
+describe('ViewEditRatioComponent', () => {
+  let component: ViewEditRatioComponent;
+  let fixture: ComponentFixture<ViewEditRatioComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProjectSummaryComponent ]
+      declarations: [ ViewEditRatioComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProjectSummaryComponent);
+    fixture = TestBed.createComponent(ViewEditRatioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

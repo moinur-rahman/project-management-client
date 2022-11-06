@@ -1,0 +1,52 @@
+<div class="container-fluid project-manager-page">
+  <app-sidebar></app-sidebar>
+
+  <div class="view-edit-ratio">
+    <div class="edit-ratio-form-div">
+      <form
+        (ngSubmit)="onSubmit(addRatio)"
+        #addRatio="ngForm"
+        class="edit-ratio-form"
+      >
+        <div class="edit-ratio-form-row">
+          <label>Developer Name:</label>
+          <select name="developerName" ngModel>
+            <option value="" selected disabled hidden>Choose here</option>
+            <option
+              *ngFor="let developer of developerList"
+              [ngValue]="developer.developerName"
+            >
+              {{ developer.developerName }}
+            </option>
+          </select>
+        </div>
+
+        <div class="edit-ratio-form-row">
+          <label>Ratio</label>
+          <input name="ratio" ngModel />
+        </div>
+        <div>
+          <button class="btn btn-dark">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="edit-ratio-form-div">
+      <h1 align="center">Ratio</h1>
+      <br />
+      <table class="table table-bordered table-striped border-dark">
+        <thead>
+          <tr>
+            <th>Developer</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let developer of developerList">
+            <td>{{ developer.developerName }}</td>
+            <td>{{ developer.ratio }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

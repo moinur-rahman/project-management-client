@@ -1,7 +1,57 @@
 <div class="container-fluid project-manager-page">
   <app-sidebar></app-sidebar>
   <div class="view-dashboard">
-    <app-project-statistic></app-project-statistic>
-    <app-project-summary></app-project-summary>
+    <div
+      class="project-statistic d-flex flex-column justify-content-around align-items-center"
+    >
+      <h2>Project Statistic</h2>
+      <div
+        class="project-statistic-content d-flex justify-content-around align-items-center"
+      >
+        <div>
+          <p>Total Project</p>
+          <p class="project-statistic-content-number">{{ totalProjects }}</p>
+        </div>
+        <div class="vl"></div>
+        <div>
+          <p>On Going</p>
+          <p class="project-statistic-content-number">{{ ongoing }}</p>
+        </div>
+        <div class="vl"></div>
+        <div>
+          <p>Pending</p>
+          <p class="project-statistic-content-number">
+            {{ totalProjects - ongoing }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-summary">
+      <h1>Project summary</h1>
+      <table
+        class="project-summary-table table table-bordered table-striped border-dark"
+      >
+        <tbody>
+          <tr>
+            <th>Project Name</th>
+            <th>Team Members</th>
+            <th>Status</th>
+          </tr>
+          <tr *ngFor="let list of summary">
+            <td>{{ list.TaskName }}</td>
+            <td style="display: flex">
+              <p
+                style="margin-right: 5px"
+                *ngFor="let developer of list.subtasks"
+              >
+                {{ developer.developerName }},
+              </p>
+            </td>
+            <td>Ongoing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
