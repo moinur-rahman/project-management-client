@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,6 +21,12 @@ import { CreateProjectListComponent } from './project-manager-page/view-create-p
 import { ViewAssignProjectComponent } from './project-manager-page/view-assign-project/view-assign-project.component';
 import { ViewGanttChartComponent } from './project-manager-page/view-gantt-chart/view-gantt-chart.component';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { DeveloperSidenavBarComponent } from './developer-page/developer-sidenav-bar/developer-sidenav-bar.component';
+import { DeveloperAllProjectsComponent } from './developer-page/developer-all-projects/developer-all-projects.component';
+import { AllProjectsListComponent } from './developer-page/developer-all-projects/all-projects-list/all-projects-list.component';
+import { DeveloperWelcomeComponent } from './developer-page/developer-page-header/developer-welcome/developer-welcome.component';
+import { DeveloperSingleProjectComponent } from './developer-page/developer-page-header/developer-single-project/developer-single-project.component';
+import { DeveloperTopBarComponent } from './developer-page/developer-top-bar/developer-top-bar.component';
 
 
 // @NgModule({
@@ -41,7 +48,13 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt';
     CreateProjectListComponent,
     ViewAssignProjectComponent,
     ViewGanttChartComponent,
-    TopRightComponent
+    TopRightComponent,
+    DeveloperSidenavBarComponent,
+    DeveloperAllProjectsComponent,
+    AllProjectsListComponent,
+    DeveloperWelcomeComponent,
+    DeveloperSingleProjectComponent,
+    DeveloperTopBarComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +62,7 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt';
     BrowserAnimationsModule,
     FontAwesomeModule,
     GanttModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

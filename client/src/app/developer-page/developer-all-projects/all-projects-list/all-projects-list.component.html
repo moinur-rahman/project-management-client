@@ -1,0 +1,22 @@
+<div class="all-projects-div">
+  <div>
+    <span class="Allprojects">All Projects</span>
+  </div>
+  <div class="NewTopProject">
+    <span class="Projects">Projects</span>
+    <span class="Newest">The Newest</span
+    ><span class="TopPriority">Top Priority</span>
+  </div>
+
+  <div class="bodyproject" *ngFor="let item of list">
+    <div class="card1">
+      <div class="cardbg"></div>
+      <div class="Projectimage"></div>
+      <span class="Projectname">{{ item.projectName }}</span>
+      <span class="Projectgiver">{{ item.projectGiver }}</span>
+      <span class="viewproject"><button>View Project</button></span>
+
+      <div class="v1_257"></div>
+    </div>
+  </div>
+</div>
