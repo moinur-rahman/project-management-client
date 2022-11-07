@@ -1,41 +1,38 @@
 .searchIcon{
-    margin-left: 40px;
-    margin-top: 8px;
-    
+    margin-left: 0px;
+    margin-top: 12px;   
 }
 
 .searchBar{
     border: 2px solid white;
-    background-color: #F5F5F7;
+    background: rgb(241, 236, 236);
     position: absolute;
-    height: 40px;
-    width: 300px;
+    height: 45px;
+    width: 340px;
     border-radius: 25px;
 }
 
 .projectBox{
-    width: 45%;
+    width: 40%;
     display: flex;
-    height: 200px;
     justify-content:center;
     align-items: center;
     text-align: center;
-    background-color:#F5F5F7;
+    background: rgb(241, 236, 236);
     padding: 20px;
     margin-right: 30px;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 .ProjectNumberComplete{
     font-size: 70px;
-    font-weight: 700;
-    font-family: sans-serif;
-    margin-left: 20px;
+    font-weight: 50;
+    font-family: Baloo Bhai;
+    margin-left: 10px;
 }
 
 .ProjectNumberPending{
     font-size: 20px;
-    font-weight: 600;
-    text-align: right;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;   
+    font-family: Baloo Bhai;
 }

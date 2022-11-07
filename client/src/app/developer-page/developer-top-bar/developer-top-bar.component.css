@@ -6,7 +6,7 @@
 
 .searchBar{
     border: 2px solid white;
-    background-color: #F5F5F7;
+    background: rgb(241, 236, 236);
     position: absolute;
     height: 40px;
     width: 300px;
