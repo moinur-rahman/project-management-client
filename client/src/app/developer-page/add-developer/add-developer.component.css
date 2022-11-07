@@ -132,3 +132,317 @@ body.active .wrapper .section{
 	margin-left: 0;
 	width: 100%;
 }
+
+* {
+	box-sizing: border-box;
+  }
+  body {
+	font-size: 14px;
+  }
+  
+  .Allprojects{
+	width: 620px;
+  
+  }
+  .NewTopProject{
+	width: 620px;
+	min-height: 50px;
+   
+  }
+  .bodyproject {
+	width: 620px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+  }
+  .card1 {
+	width: 620px;
+	height: 120px;
+	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	
+	left: 0px;
+	overflow: hidden;
+  }
+  .cardbg {
+	width: 620px;
+	height: 80px;
+	background: rgb(241, 236, 236);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 25px;
+  }
+  .button {
+	display: block;
+	padding: 6px 12px;
+	border-radius: 25px;
+	cursor: pointer;
+  }
+  
+  .card2 {
+	width: 620px;
+	height: 80px;
+  
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 1;
+	position: absolute;
+	top: 91px;
+	left: 0px;
+	overflow: hidden;
+  }
+  
+  .Projectimage {
+	width: 64px;
+	height: 64px;
+	background: rgba(255, 255, 255, 1);
+	opacity: 1;
+	position: absolute;
+	top: 8px;
+	left: 9px;
+	border: 2px solid rgba(0, 0, 0, 1);
+	border-radius: 50px;
+  }
+  .Projectname {
+	width: 100px;
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 18px;
+	left: 97px;
+	font-family: Baloo Bhai;
+	font-weight: Regular;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+  }
+  .Projectgiver {
+	width: 132px;
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 45px;
+	left: 97px;
+	font-family: Roboto;
+	font-weight: Regular;
+	font-size: 14px;
+	opacity: 1;
+	text-align: left;
+  }
+  .Timeestimation {
+	width: 150px;
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 34px;
+	left: 280px;
+	font-family: Roboto;
+	font-weight: Regular;
+	font-size: 14px;
+	opacity: 1;
+	text-align: left;
+  }
+  .Timeestimation:hover {
+	color: #7b0000;
+	
+  }
+  .viewproject {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 74px;
+	left: 160px;
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	font-family: Roboto;
+	font-weight: Bold;
+	font-size: 13px;
+	opacity: 1;
+	text-align: left;
+	margin-top: 2.5px;
+  }
+  .Projects {
+	width: 83px;
+	color: rgba(0, 0, 0, 1);
+	position: relative;
+	
+	font-family: Baloo Bhai;
+	font-weight: Regular;
+	font-size: 18px;
+	opacity: 1;
+	text-align: left;
+  }
+  .Newest {
+	width: 86px;
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	margin-left: 100px;
+	font-family: Baloo Bhai;
+	font-weight: Regular;
+	font-size: 16px;
+	opacity: 0.30000001192092896;
+	text-align: left;
+  }
+  .TopPriority {
+	width: 86px;
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	margin-left: 300px;
+	font-family: Baloo Bhai;
+	font-weight: Regular;
+	font-size: 16px;
+	opacity: 0.30000001192092896;
+	text-align: left;
+  }
+  .Allprojects {
+	width: 91px;
+	color: rgba(0, 0, 0, 1);
+	position: relative;
+	top: 0px;
+	left: 0px;
+	font-family: Baloo Bhai;
+	font-weight: Regular;
+	font-size: 28px;
+	opacity: 1;
+	text-align: left;
+  }
+  
+  .viewproject button {
+	padding: 5px 28px 5px 28px;
+	cursor: pointer;
+	background-color: black;
+	position: absolute;
+	top: 19px;
+	left: 305px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	width: 140px;
+	height: 40px;
+  }
+  .viewproject button:hover {
+	color: black;
+	background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+	font-weight: 500;
+  }
+  
+  /*project estimation 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+  *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+  }*/
+  body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+	margin-top: 50px;
+  }
+  .container {
+	max-width: 500px;
+	width: 80%;
+	height: 280px;
+	background-color: #fff;
+	padding: 25px 30px;
+	border-radius: 25px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  .container .title {
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+  }
+  .container .title::before {
+	content: "";
+	/*position: absolute;*/
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 120px;
+	border-radius: 5px;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  .content form .user-details {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 0px 0;
+  }
+  .form .input-box {
+	margin-bottom: 0px;
+	width: 465px;
+	/*width: calc(100% / 2 - 20px);*/
+  }
+   .input-box span.details {
+	display: block;
+	font-weight: 500;
+	margin-bottom: 0px;
+  }
+   .input-box {
+	height: 45px;
+	width: 100%;
+	outline: none;
+	font-size: 16px;
+	border-radius: 25px;
+	padding-left: 15px;
+	margin-top: 15px;
+	transition: all 0.3s ease;
+	font-family: Roboto;
+	margin-bottom: 15px;
+  }
+   .input-box:focus, .input-box:valid {
+	border-color: black;
+  }
+
+   .col-9 .submit {
+	height: 40px;
+	width: 120px;
+	border-radius: 25px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	background-color: black;
+	font-family: Roboto;
+	margin-left:20px ;
+  }
+
+  .col-9 .submit:hover {
+	color: black;
+	background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+  
+  .button-div {
+	display: flex;
+	justify-content: center;
+  }
+
+  .form{
+	margin-top: 30px;
+	margin-bottom: 40px;
+  }
+  

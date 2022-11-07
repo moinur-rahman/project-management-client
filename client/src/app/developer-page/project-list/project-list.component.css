@@ -1,218 +1,37 @@
 * {
   box-sizing: border-box;
 }
-/* body {
-  font-size: 14px;
-}
-.dashboard-projects{
-  margin-left: -180px;
-  position: relative;
-  left: 0px;
-}
-.Allprojects{
-  width: 620px;
-}
-.NewTopProject{
-  width: 620px;
-  min-height: 50px;
-}
-.bodyproject {
-  width: 90%;
-  height: 100px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  overflow: hidden;
-}
-.card1 {
-  width: 90%;
-  height: 80px;
-  
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  
-  left: 0px;
-  overflow: hidden;
-}
-.cardbg {
-  width: 620px;
-  height: 80px;
-  background: rgba(245, 245, 247, 1);
-  opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-radius: 15px;
-}
-.button {
-  display: block;
-  padding: 6px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.card2 {
-  width: 620px;
-  height: 80px;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 91px;
-  left: 0px;
-  overflow: hidden;
-}
-
-.Projectimage {
-  width: 64px;
-  height: 64px;
-  background: rgba(255, 255, 255, 1);
-  opacity: 1;
-  position: absolute;
-  top: 8px;
-  left: 9px;
-  border: 2px solid rgba(0, 0, 0, 1);
-}
-.Projectname {
-  width: 89px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 18px;
-  left: 97px;
-  font-family: Baloo Bhai;
-  font-weight: Regular;
-  font-size: 16px;
-  opacity: 1;
-  text-align: left;
-}
-.Projectgiver {
-  width: 132px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 45px;
-  left: 97px;
-  font-family: Roboto;
-  font-weight: Regular;
-  font-size: 13px;
-  opacity: 1;
-  text-align: left;
-}
-.Timeestimation {
-  width: 150px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  top: 34px;
-  left: 280px;
-  font-family: Roboto;
-  font-weight: Regular;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
-}
-.viewproject {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 74px;
-  left: 160px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  font-family: Roboto;
-  font-weight: Bold;
-  font-size: 13px;
-  opacity: 1;
-  text-align: left;
-  margin-top: 2.5px;
-}
-.Projects {
-  width: 83px;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-  
-  font-family: Baloo Bhai;
-  font-weight: Regular;
-  font-size: 16px;
-  opacity: 1;
-  text-align: left;
-}
-.Newest {
-  width: 86px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  margin-left: 100px;
-  font-family: Baloo Bhai;
-  font-weight: Regular;
-  font-size: 16px;
-  opacity: 0.30000001192092896;
-  text-align: left;
-}
-.TopPriority {
-  width: 86px;
-  color: rgba(0, 0, 0, 1);
-  position: absolute;
-  margin-left: 300px;
-  font-family: Baloo Bhai;
-  font-weight: Regular;
-  font-size: 16px;
-  opacity: 0.30000001192092896;
-  text-align: left;
-}
-.Allprojects {
-  width: 91px;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-  top: 0px;
-  left: 0px;
-  font-family: Baloo Bhai;
-  font-weight: Regular;
-  font-size: 24px;
-  opacity: 1;
-  text-align: left;
-}
-
-.viewproject button {
-  padding: 5px 28px 5px 28px;
-  cursor: pointer;
-  background-color: black;
-  position: absolute;
-  top: 19px;
-  left: 305px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  overflow: hidden;
-  color: white;
-  text-align: center;
-  width: 140px;
-  height: 40px;
-} */
-
-/*project estimation 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}*/
  body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
+
+.selectTask{
+  font-family: Baloo Bhai;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.bodyproject{
+  font-family: Baloo Bhai;
+  margin-top: 10px;
+  padding-top: 10px;
+
+
+}
+.devname{
+  font-family: Baloo Bhai;
+  margin-top: 10px;
+  padding-top: 30px;
+}
+
+.Allprojects{
+  font-family: Baloo Bhai;
+  font-size: 40px;
+}
+
 .container {
   max-width: 500px;
   width: 80%;
@@ -239,7 +58,6 @@
   height: 3px;
   width: 120px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 .content form .user-details {
   display: flex;
@@ -252,7 +70,7 @@ form .input-box {
   width: 465px;
  
 }
-form .input-box {
+ .input-box {
   display: block;
   font-weight: 500;
   margin-bottom: 0px;
@@ -268,56 +86,27 @@ form .input-box {
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
-form .input-box:focus, .input-box:valid {
-  border-color: #9b59b6;
+
+ .btn-success {
+	height: 40px;
+	width: 120px;
+	border-radius: 25px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	background-color: black;
+	font-family: Roboto;
+  margin-top: 20px;
+	
 }
 
-form .input-box {
-  height: 45px;
-  margin: 5px 0;
-}
-.modal-footer .button .submit {
-  height: 40px;
-  width: 120px;
-  border-radius: 25px;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  cursor: pointer;
-
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
-.modal-footer .button .cancel {
-  height: 40px;
-  width: 120px;
-  border-radius: 25px;
-  border: none;
-  color: rgb(66, 171, 236);
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  cursor: pointer;
-  margin-right: 10px;
-
-  background: linear-gradient(135deg, #eaedf0, #e7caf3);
-}
-
-.modal-footer .button-div .cancel:hover {
+.btn-success:hover {
   color: black;
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
-
-.modal-footer .button-div .submit:hover {
-  color: black;
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
-}
-
-.button-div {
-  display: flex;
-  justify-content: center;
-} 
 
 .selcet-box{
   width: 100px;
