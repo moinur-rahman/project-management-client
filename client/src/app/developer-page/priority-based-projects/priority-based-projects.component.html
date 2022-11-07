@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-3">
+    <app-developer-sidenav-bar></app-developer-sidenav-bar>
+  </div>
+  <div class="col-9 mt-5">
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6"><app-developer-top-bar></app-developer-top-bar></div>
+    </div>
+    <form
+      (ngSubmit)="onSub(developersAssignProject)"
+      #developersAssignProject="ngForm"
+    >
+      <div>
+        <select class="input-box" name="developerName" ngModel>
+          <option value="" selected disabled hidden>Choose Employee</option>
+          <option
+            *ngFor="let developer of developerList"
+            [ngValue]="developer.developerName"
+          >
+            {{ developer.developerName }}
+          </option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    <div class="row mt-5">
+        <div class="col-4"><h3>Project Name</h3></div>
+        
+        <div class="col-4"><h3>Priority</h3></div>
+    </div>
+    <div class="row" *ngFor="let project of projectList">
+        <div class="col-4" *ngFor="let pd of project">{{pd.projectName}}</div>
+        
+        <div class="col-4" *ngFor="let pd of project">{{pd.projectPriority}}</div>
+    </div>
+    
+  </div>
+</div>

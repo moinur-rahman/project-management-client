@@ -132,3 +132,47 @@ body.active .wrapper .section{
 	margin-left: 0;
 	width: 100%;
 }
+
+form .input-box {
+	margin-bottom: 0px;
+	width: 465px;
+   
+  }
+  form .input-box {
+	display: block;
+	font-weight: 500;
+	margin-bottom: 0px;
+  }
+  .input-box{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	font-size: 16px;
+	border-radius: 5px;
+	padding-left: 15px;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+  }
+  form .input-box:focus, .input-box:valid {
+	border-color: #9b59b6;
+  }
+  
+  form .input-box {
+	height: 45px;
+	margin: 5px 0;
+  }
+
+  .submit{
+	height: 40px;
+  width: 120px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }

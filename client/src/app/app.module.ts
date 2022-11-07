@@ -27,6 +27,7 @@ import { DeveloperTopBarComponent } from './developer-page/developer-top-bar/dev
 import { ViewEditRatioComponent } from './project-manager-page/view-edit-ratio/view-edit-ratio.component';
 import { AddDeveloperComponent } from './developer-page/add-developer/add-developer.component';
 import { AddEstimationTimeComponent } from './developer-page/add-estimation-time/add-estimation-time.component';
+import { PriorityBasedProjectsComponent } from './developer-page/priority-based-projects/priority-based-projects.component';
 // @NgModule({
 //   declarations: [AppComponent, ProjectManagerPageComponent, DeveloperPageComponent, DeveloperPageComponent, ProjectListComponent, DeveloperPageHeaderComponent, TopRightComponent],
 
@@ -52,6 +53,7 @@ import { AddEstimationTimeComponent } from './developer-page/add-estimation-time
     ViewEditRatioComponent,
     AddDeveloperComponent,
     AddEstimationTimeComponent,
+    PriorityBasedProjectsComponent,
   ],
   imports: [
     BrowserModule,

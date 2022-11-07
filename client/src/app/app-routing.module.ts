@@ -1,3 +1,4 @@
+import { PriorityBasedProjectsComponent } from './developer-page/priority-based-projects/priority-based-projects.component';
 import { AddEstimationTimeComponent } from './developer-page/add-estimation-time/add-estimation-time.component';
 import { AllProjectsListComponent } from './developer-page/developer-all-projects/all-projects-list/all-projects-list.component';
 import { AddDeveloperComponent } from './developer-page/add-developer/add-developer.component';
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: 'developer/add-estimation',
     component: AddEstimationTimeComponent,
+  },
+  {
+    path: 'developer/priority-based',
+    component: PriorityBasedProjectsComponent,
   }
 ];
 
