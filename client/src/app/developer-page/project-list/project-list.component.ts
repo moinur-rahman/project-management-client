@@ -8,13 +8,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./project-list.component.css'],
 })
 export class ProjectListComponent implements OnInit {
-  projectList: any = [];
   developerList: any = [];
-  project: any = '';
-  developer: any = '';
-  taskList: any = [];
-  task: any = '';
-  taskListFilter: any = [];
+  developerProjectList: any = [];
+  selectedDeveloper: any;
 
   constructor(private http: HttpClient) {}
 
@@ -24,54 +20,29 @@ export class ProjectListComponent implements OnInit {
       .subscribe((data) => (this.developerList = data));
   }
 
-  async onSub(developersAssignProject: any) {
+  async onDeveloperSubmit(developersAssignProject: any) {
     const { developerName } = developersAssignProject.form.controls;
-    this.developer = developerName.value;
-
+    this.selectedDeveloper = developerName.value;
     await this.http
-      .get(
-        `http://localhost:5000/get-developer-project-list/${developerName.value}`,
-        {}
-      )
-      .subscribe((data) => ((this.projectList = data)));
+      .post('http://localhost:5000/get-developer-project', {
+        developerName: developerName.value,
+      })
+      .subscribe((data) => (this.developerProjectList = data));
   }
-
-  async onS(searchTaskName: any) {
-    const { projectName } = searchTaskName.form.controls;
-
-    this.project = (projectName.value)
+  async onEstimateSubmit(addEstimation: any) {
+    const { estimation, startingDate, projectName } =
+      addEstimation.form.controls;
+    console.log(estimation.value);
+    console.log(startingDate.value);
     console.log(projectName.value);
-    await this.http
-      .get(`http://localhost:5000/get-taskList/${projectName.value}`, {})
-      .subscribe((data) => {
-        let i = 0;
-        this.taskList = data;
-        while (i < this.taskList.length) {
-          console.log(this.taskList[i].developerName, this.developer);
-          if (this.taskList[i].developerName == this.developer) {
-            console.log('filter');
-            this.taskListFilter.push(this.taskList[i]);
-          }
-          i = i + 1;
-        }
+    console.log(this.selectedDeveloper);
 
-        console.log(this.taskListFilter);
-        
-      });
-  }
-
-  async onSubmit(addEstimation: any) {
-    const { estimatedDays, startingDays, taskName} =
-    addEstimation.form.controls;
-
-    console.log(this.project, this.developer,taskName.value, estimatedDays.value, startingDays.value)
     await this.http
       .post('http://localhost:5000/add-estimation', {
-        projectName: this.project,
-        developerName: this.developer,
-        taskName: taskName.value,
-        estimation: estimatedDays.value,
-        startingDate: startingDays.value,
+        projectName: projectName.value,
+        developerName: this.selectedDeveloper,
+        estimation: estimation.value,
+        startingDate: startingDate.value,
       })
       .subscribe((data) => console.log(data));
   }

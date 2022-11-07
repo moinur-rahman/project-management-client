@@ -6,7 +6,7 @@
   <div>
     <h5>Select Employee</h5>
     <form
-      (ngSubmit)="onSub(developersAssignProject)"
+      (ngSubmit)="onDeveloperSubmit(developersAssignProject)"
       #developersAssignProject="ngForm"
     >
       <div>
@@ -24,51 +24,33 @@
     </form>
   </div>
 
-  <div class="bodyproject mt-3">
-    <div class="card1">
-      <h5>Select Project</h5>
-      <form
-        class="mt-3"
-        (ngSubmit)="onS(searchTaskName)"
-        #searchTaskName="ngForm"
-      >
-       
-
-        <select class="input-box" name="projectName" ngModel>
-          <option value="" selected disabled hidden>Choose Project</option>
-          <option
-            *ngFor="let project of projectList"
-            [ngValue]="project.projectName"
-          >
-          
-            {{ project.projectName }}
-          </option>
-        </select>
-        <button class="btn btn-success" type="submit">Submit</button>
-      </form>
-
-     
-
-      <div class="v1_257"></div>
-    </div>
-  </div>
-
   <div class="mt-3">
     <h5>Select task</h5>
-    <form (ngSubmit)="onSubmit(addEstimation)" #addEstimation="ngForm">
-      <select class="input-box" name="taskName" ngModel>
+    <form (ngSubmit)="onEstimateSubmit(addEstimation)" #addEstimation="ngForm">
+      <select class="input-box" name="projectName" ngModel>
         <option value="" selected disabled hidden>Choose task</option>
-        <option *ngFor="let task of taskListFilter" [ngValue]="task.taskName">
-          {{ task.taskName }}
+        <option *ngFor="let list of developerProjectList" [ngValue]="list.projectName">
+          {{
+           list.projectName + "  " + list.taskName
+          }}
         </option>
       </select>
-      <input class="input-box" ngModel name="estimatedDays" type="number" placeholder="estimated days" />
-      <input class="input-box" ngModel name="startingDays" type="date" placeholder="date"/>
-      <br/>
+      <input
+        class="input-box"
+        ngModel
+        name="estimation"
+        type="number"
+        placeholder="estimated days"
+      />
+      <input
+        class="input-box"
+        ngModel
+        name="startingDate"
+        type="date"
+        placeholder="date"
+      />
+      <br />
       <button class="btn btn-success" type="submit">Submit</button>
     </form>
   </div>
 </div>
-
- 
-     
