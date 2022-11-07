@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-3">
+    <app-developer-sidenav-bar></app-developer-sidenav-bar>
+  </div>
+  <div class="col-9">
+
+    <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6"><app-developer-top-bar></app-developer-top-bar></div>
+    </div>
+    <div>
+        <h5>Add new Developer</h5>
+      <!-- <form #createDeveloper="ngForm" (submit)="createDev(createDeveloper.value)"> -->
+      <form (ngSubmit)="onSubmit(createDeveloper)" #createDeveloper="ngForm">
+        <input class="input-box" ngModel name="developerName" type="text" placeholder="Add new developer"/>
+        <button class="submit" type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+
+    <div>
+        <h3>All of our developers are: </h3>
+      <div *ngFor="let developer of developerList">
+        <p>{{ developer.developerName }}</p>
+      </div>
+    </div>
+  </div>
+</div>

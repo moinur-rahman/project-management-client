@@ -1,91 +1,74 @@
 <div class="dashboard-projects">
   <div>
-    <span class="Allprojects">All Projects</span>
-  </div>
-  <div class="NewTopProject">
-    <span class="Projects">Projects</span>
-    <span class="Newest">The Newest</span
-    ><span class="TopPriority">Top Priority</span>
+    <h4><span class="Allprojects">Add Estimation Times</span></h4>
   </div>
 
-  <div class="bodyproject" *ngFor="let item of list">
+  <div>
+    <h5>Select Employee</h5>
+    <form
+      (ngSubmit)="onSub(developersAssignProject)"
+      #developersAssignProject="ngForm"
+    >
+      <div>
+        <select class="input-box" name="developerName" ngModel>
+          <option value="" selected disabled hidden>Choose Employee</option>
+          <option
+            *ngFor="let developer of developerList"
+            [ngValue]="developer.developerName"
+          >
+            {{ developer.developerName }}
+          </option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+
+  <div class="bodyproject mt-3">
     <div class="card1">
-      <div class="cardbg"></div>
-      <div class="Projectimage"></div>
-      <span class="Projectname">{{ item.projectName }}</span>
-      <span class="Projectgiver">{{ item.projectGiver }}</span>
-      <span
-        type="button"
-        class="Timeestimation d-flex align-items-center"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
+      <h5>Select Project</h5>
+      <form
+        class="mt-3"
+        (ngSubmit)="onS(searchTaskName)"
+        #searchTaskName="ngForm"
       >
-        <i class="fa-solid fa-circle-plus me-1"></i> Add Time Estimation
-      </span>
+       
 
-      <span class="viewproject"><button>View Project</button></span>
+        <select class="input-box" name="projectName" ngModel>
+          <option value="" selected disabled hidden>Choose Project</option>
+          <option
+            *ngFor="let project of projectList"
+            [ngValue]="project.projectName"
+          >
+          
+            {{ project.projectName }}
+          </option>
+        </select>
+        <button class="btn btn-success" type="submit">Submit</button>
+      </form>
+
+     
 
       <div class="v1_257"></div>
     </div>
   </div>
-</div>
 
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Estimated Days</h5>
-        <button
-          type="button"
-          class="btn-close me-3"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <form
-          action="#"
-          #basicForm="ngForm"
-          (submit)="getData(basicForm.value)"
-        >
-          <input
-          class="input-box"
-            ngModel
-            type="number"
-            name="no-of-days-required"
-            type=""
-            placeholder="No. of days required"
-            required
-          />
-          <br/>
-
-          <input
-            ngModel
-            type=""
-            class="input-box"
-            name="starting-date"
-            placeholder="Starting date"
-            type="date"
-            required
-          /> 
-          <br/>
-          <button class="submit" type="submit" value="Submit">Submit</button>
-          <button class="cancel" type="submit">Cancel</button>
-          
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div class="button button-div">
-          
-          
-        </div>
-      </div>
-    </div>
+  <div class="mt-3">
+    <h5>Select task</h5>
+    <form (ngSubmit)="onSubmit(addEstimation)" #addEstimation="ngForm">
+      <select class="input-box" name="taskName" ngModel>
+        <option value="" selected disabled hidden>Choose task</option>
+        <option *ngFor="let task of taskListFilter" [ngValue]="task.taskName">
+          {{ task.taskName }}
+        </option>
+      </select>
+      <input class="input-box" ngModel name="estimatedDays" type="number" placeholder="estimated days" />
+      <input class="input-box" ngModel name="startingDays" type="date" placeholder="date"/>
+      <br/>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
   </div>
 </div>
+
+ 
+     

@@ -1,3 +1,6 @@
+import { AddEstimationTimeComponent } from './developer-page/add-estimation-time/add-estimation-time.component';
+import { AllProjectsListComponent } from './developer-page/developer-all-projects/all-projects-list/all-projects-list.component';
+import { AddDeveloperComponent } from './developer-page/add-developer/add-developer.component';
 import { DeveloperAllProjectsComponent } from './developer-page/developer-all-projects/developer-all-projects.component';
 import { ProjectListComponent } from './developer-page/project-list/project-list.component';
 import { NgModule } from '@angular/core';
@@ -44,9 +47,13 @@ const routes: Routes = [
     component: DeveloperAllProjectsComponent,
   },
   {
-    path: 'developer/dashboard',
-    component: DeveloperPageComponent,
+    path: 'developer/add-developer',
+    component: AddDeveloperComponent,
   },
+  {
+    path: 'developer/add-estimation',
+    component: AddEstimationTimeComponent,
+  }
 ];
 
 @NgModule({
